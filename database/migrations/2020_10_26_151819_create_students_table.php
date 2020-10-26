@@ -16,7 +16,7 @@ class CreateStudentsTable extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->id();
             $table->string('name', 30);
-            $table->string('lastname', 100);
+            $table->string('lastname', 30);
             $table->string('gender', 1);
             $table->date('date_of_birth');
             $table->timestamps();
